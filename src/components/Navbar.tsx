@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Recycle } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,12 +28,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-eco-green flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-              <Recycle className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-bold text-heading">
-              Reutechzar
-            </span>
+            <img 
+              src={logo} 
+              alt="Reutechzar Logo" 
+              className="h-12 md:h-14 w-auto transition-transform duration-300 group-hover:scale-105"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -41,7 +41,7 @@ const Navbar = () => {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-body hover:text-eco-green transition-colors duration-300 font-medium"
+                className="text-body hover:text-metal transition-colors duration-300 font-medium"
               >
                 {link.label}
               </button>
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <button
                   key={link.href}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-body hover:text-eco-green transition-colors duration-300 font-medium text-left py-2"
+                  className="text-body hover:text-metal transition-colors duration-300 font-medium text-left py-2"
                 >
                   {link.label}
                 </button>

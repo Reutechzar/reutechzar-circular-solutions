@@ -1,36 +1,36 @@
-import { Leaf, Scale, TreePine, Handshake, Heart } from "lucide-react";
+import { Cog, Scale, Recycle, Handshake, Heart } from "lucide-react";
 
 const ValuesSection = () => {
   const values = [
     {
-      icon: Leaf,
+      icon: Cog,
       title: "Sustentabilidade em Ação",
       description: "Praticamos o que pregamos, incorporando práticas sustentáveis em todas as nossas operações.",
-      color: "bg-emerald-500",
+      color: "bg-charcoal",
     },
     {
       icon: Scale,
       title: "Ética e Transparência",
       description: "Conduzimos nossos negócios com integridade, mantendo relações claras e honestas com parceiros.",
-      color: "bg-blue-500",
+      color: "bg-steel",
     },
     {
-      icon: TreePine,
+      icon: Recycle,
       title: "Consciência Ambiental",
       description: "Cada decisão considera o impacto ambiental, buscando sempre o menor footprint possível.",
-      color: "bg-green-600",
+      color: "bg-metal",
     },
     {
       icon: Handshake,
       title: "Confiança e Colaboração",
       description: "Construímos parcerias sólidas baseadas em confiança mútua e objetivos compartilhados.",
-      color: "bg-amber-500",
+      color: "bg-slate-500",
     },
     {
       icon: Heart,
       title: "Bem-estar Prioritário",
       description: "O bem-estar de colaboradores, parceiros e comunidade está no centro de nossas decisões.",
-      color: "bg-rose-500",
+      color: "bg-zinc-500",
     },
   ];
 
@@ -39,12 +39,12 @@ const ValuesSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-eco-green/10 text-eco-green text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-metal/10 text-metal text-sm font-medium mb-4">
             Nossos Valores
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-heading mb-6">
             Os fundamentos que{" "}
-            <span className="text-eco-green">guiam nossas ações</span>
+            <span className="text-steel">guiam nossas ações</span>
           </h2>
           <p className="text-lg text-body leading-relaxed">
             Nossos valores representam os fundamentos internos que devem transparecer para o externo, 
@@ -62,7 +62,7 @@ const ValuesSection = () => {
               }`}
             >
               {/* Hover gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-eco-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-metal/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               <div className="relative z-10">
                 <div className={`w-16 h-16 rounded-2xl ${value.color} flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>

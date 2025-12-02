@@ -66,12 +66,12 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-eco-green/10 text-eco-green text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-metal/10 text-metal text-sm font-medium mb-4">
             Contato
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-heading mb-6">
             Vamos conversar sobre{" "}
-            <span className="text-eco-green">sua empresa</span>
+            <span className="text-steel">sua empresa</span>
           </h2>
           <p className="text-lg text-body leading-relaxed">
             Entre em contato conosco e descubra como podemos ajudar sua empresa 
@@ -201,8 +201,8 @@ const ContactSection = () => {
               <div className="space-y-6">
                 {contactInfo.map((info) => (
                   <div key={info.label} className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-eco-green/10 flex items-center justify-center flex-shrink-0">
-                      <info.icon className="w-6 h-6 text-eco-green" />
+                    <div className="w-12 h-12 rounded-xl bg-metal/10 flex items-center justify-center flex-shrink-0">
+                      <info.icon className="w-6 h-6 text-metal" />
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground mb-1">
