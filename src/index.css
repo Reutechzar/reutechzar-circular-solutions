@@ -36,24 +36,28 @@
 
     --radius: 0.75rem;
 
-    /* Custom tokens */
-    --eco-green: 145 45% 45%;
-    --eco-green-light: 145 45% 92%;
-    --eco-green-dark: 145 50% 30%;
-    --neutral-warm: 30 10% 95%;
+    /* Custom tokens - Metallic palette */
+    --metal: 0 0% 33%;
+    --metal-light: 0 0% 92%;
+    --metal-dark: 0 0% 22%;
+    --steel: 210 10% 50%;
+    --steel-light: 210 10% 85%;
+    --silver: 0 0% 75%;
+    --charcoal: 0 0% 28%;
+    --neutral-warm: 30 5% 95%;
     --text-heading: 0 0% 20%;
     --text-body: 0 0% 35%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 33%) 0%, hsl(145 45% 35%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(145 45% 98%) 100%);
-    --gradient-section: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(145 45% 97%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 33%) 0%, hsl(210 10% 40%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 5% 97%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(210 5% 96%) 100%);
 
     /* Shadows */
     --shadow-sm: 0 2px 8px -2px hsl(0 0% 0% / 0.08);
     --shadow-md: 0 8px 24px -8px hsl(0 0% 0% / 0.12);
     --shadow-lg: 0 16px 48px -12px hsl(0 0% 0% / 0.16);
-    --shadow-glow: 0 0 40px hsl(145 45% 45% / 0.2);
+    --shadow-glow: 0 0 40px hsl(210 10% 50% / 0.3);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 0 0% 20%;
@@ -94,9 +98,13 @@
     --input: 0 0% 20%;
     --ring: 145 45% 45%;
 
-    --eco-green: 145 45% 50%;
-    --eco-green-light: 145 30% 18%;
-    --eco-green-dark: 145 50% 35%;
+    --metal: 0 0% 70%;
+    --metal-light: 0 0% 20%;
+    --metal-dark: 0 0% 80%;
+    --steel: 210 10% 60%;
+    --steel-light: 210 10% 25%;
+    --silver: 0 0% 65%;
+    --charcoal: 0 0% 75%;
     --neutral-warm: 30 5% 12%;
     --text-heading: 0 0% 95%;
     --text-body: 0 0% 70%;
@@ -126,16 +134,24 @@
     color: hsl(var(--text-body));
   }
 
-  .bg-eco-green {
-    background-color: hsl(var(--eco-green));
+  .bg-metal {
+    background-color: hsl(var(--metal));
   }
 
-  .bg-eco-green-light {
-    background-color: hsl(var(--eco-green-light));
+  .bg-metal-light {
+    background-color: hsl(var(--metal-light));
   }
 
-  .text-eco-green {
-    color: hsl(var(--eco-green));
+  .bg-steel {
+    background-color: hsl(var(--steel));
+  }
+
+  .text-metal {
+    color: hsl(var(--metal));
+  }
+
+  .text-steel {
+    color: hsl(var(--steel));
   }
 
   .gradient-hero {

@@ -51,11 +51,17 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        eco: {
-          green: "hsl(var(--eco-green))",
-          "green-light": "hsl(var(--eco-green-light))",
-          "green-dark": "hsl(var(--eco-green-dark))",
+        metal: {
+          DEFAULT: "hsl(var(--metal))",
+          light: "hsl(var(--metal-light))",
+          dark: "hsl(var(--metal-dark))",
         },
+        steel: {
+          DEFAULT: "hsl(var(--steel))",
+          light: "hsl(var(--steel-light))",
+        },
+        silver: "hsl(var(--silver))",
+        charcoal: "hsl(var(--charcoal))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

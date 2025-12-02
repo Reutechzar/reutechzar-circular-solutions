@@ -29,12 +29,12 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-block px-4 py-1.5 rounded-full bg-eco-green/10 text-eco-green text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-1.5 rounded-full bg-metal/10 text-metal text-sm font-medium mb-4">
             Sobre Nós
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-heading mb-6">
             Pioneiros na{" "}
-            <span className="text-eco-green">reciclagem eletrônica</span>{" "}
+            <span className="text-steel">reciclagem eletrônica</span>{" "}
             em Itapevi
           </h2>
           <p className="text-lg text-body leading-relaxed">
@@ -53,8 +53,8 @@ const AboutSection = () => {
               className="group bg-card rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border/50"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-14 h-14 rounded-xl bg-eco-green/10 flex items-center justify-center mb-4 group-hover:bg-eco-green group-hover:shadow-glow transition-all duration-300">
-                <feature.icon className="w-7 h-7 text-eco-green group-hover:text-primary-foreground transition-colors duration-300" />
+              <div className="w-14 h-14 rounded-xl bg-metal/10 flex items-center justify-center mb-4 group-hover:bg-metal group-hover:shadow-glow transition-all duration-300">
+                <feature.icon className="w-7 h-7 text-metal group-hover:text-primary-foreground transition-colors duration-300" />
               </div>
               <h3 className="text-xl font-semibold text-heading mb-2">
                 {feature.title}

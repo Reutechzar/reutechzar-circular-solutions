@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Leaf, Cpu } from "lucide-react";
+import { ArrowDown, Cpu, Cog } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
@@ -33,9 +33,9 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-eco-green-light border border-eco-green/20 mb-6 animate-fade-up">
-            <Leaf className="w-4 h-4 text-eco-green" />
-            <span className="text-sm font-medium text-eco-green">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-metal-light border border-metal/20 mb-6 animate-fade-up">
+            <Cog className="w-4 h-4 text-metal" />
+            <span className="text-sm font-medium text-metal">
               Economia Circular de Eletrônicos
             </span>
           </div>
@@ -43,20 +43,20 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-heading leading-tight mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Transformamos{" "}
-            <span className="text-eco-green">resíduos eletrônicos</span>{" "}
+            <span className="text-steel">resíduos eletrônicos</span>{" "}
             em recursos valiosos
           </h1>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-body mb-8 leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            Soluções econômicas e sustentáveis para sua empresa através do reaproveitamento de componentes eletrônicos. Juntos, construímos um futuro mais verde.
+            Soluções econômicas e sustentáveis para sua empresa através do reaproveitamento de componentes eletrônicos. Juntos, construímos um futuro mais responsável.
           </p>
 
           {/* Stats */}
           <div className="flex flex-wrap gap-8 mb-10 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-eco-green/10 flex items-center justify-center">
-                <Cpu className="w-6 h-6 text-eco-green" />
+              <div className="w-12 h-12 rounded-xl bg-metal/10 flex items-center justify-center">
+                <Cpu className="w-6 h-6 text-metal" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-heading">100%</p>
@@ -64,8 +64,8 @@ const Hero = () => {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-eco-green/10 flex items-center justify-center">
-                <Leaf className="w-6 h-6 text-eco-green" />
+              <div className="w-12 h-12 rounded-xl bg-steel/10 flex items-center justify-center">
+                <Cog className="w-6 h-6 text-steel" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-heading">Itapevi</p>
@@ -90,7 +90,7 @@ const Hero = () => {
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-float">
         <button
           onClick={scrollToAbout}
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-eco-green transition-colors"
+          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-metal transition-colors"
         >
           <span className="text-sm font-medium">Descubra mais</span>
           <ArrowDown className="w-5 h-5" />
