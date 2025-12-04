@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Cpu, Cog } from "lucide-react";
+import { Cpu, Cog } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
@@ -93,7 +93,6 @@ const Hero = () => {
           className="flex flex-col items-center gap-2 text-muted-foreground hover:text-metal transition-colors"
         >
           <span className="text-sm font-medium">Descubra mais</span>
-          <ArrowDown className="w-5 h-5" />
         </button>
       </div>
     </section>
