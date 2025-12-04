@@ -90,10 +90,10 @@ const Hero = () => {
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-float">
         <button
           onClick={scrollToAbout}
-          className="flex flex-col items-center gap-2 text-muted-foreground hover:text-metal transition-colors"
+          className="text-muted-foreground hover:text-metal transition-colors"
+          aria-label="Rolar para baixo"
         >
-          <span className="text-sm font-medium">Descubra mais</span>
-          <ArrowDown className="w-5 h-5" />
+          <ArrowDown className="w-6 h-6" />
         </button>
       </div>
     </section>
