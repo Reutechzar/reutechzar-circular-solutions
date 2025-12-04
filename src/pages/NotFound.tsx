@@ -1,39 +1,28 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reutechzar - Reciclagem de Componentes Eletrônicos | Itapevi</title>
-    <meta name="description" content="A Reutechzar oferece soluções econômicas e sustentáveis através do reaproveitamento de componentes eletrônicos. Transformamos resíduos em recursos valiosos em Itapevi e região." />
-    <meta name="author" content="Reutechzar" />
-    <meta name="keywords" content="reciclagem eletrônica, componentes eletrônicos, economia circular, sustentabilidade, Itapevi, reaproveitamento" />
-    <link rel="canonical" href="https://reutechzar.com.br" />
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
 
-    <meta property="og:title" content="Reutechzar - Reciclagem de Componentes Eletrônicos" />
-    <meta property="og:description" content="Soluções econômicas e sustentáveis através do reaproveitamento de componentes eletrônicos em Itapevi e região." />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="pt_BR" />
+const NotFound = () => {
+  const location = useLocation();
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Reutechzar - Reciclagem de Componentes Eletrônicos" />
-    <meta name="twitter:description" content="Soluções econômicas e sustentáveis através do reaproveitamento de componentes eletrônicos em Itapevi e região." />
+  useEffect(() => {
+    console.error(
+      "404 Error: User attempted to access non-existent route:",
+      location.pathname
+    );
+  }, [location.pathname]);
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Reutechzar",
-      "description": "Empresa de reciclagem e recuperação de materiais eletrônicos em Itapevi",
-      "url": "https://reutechzar.com.br",
-      "areaServed": "Itapevi, São Paulo, Brasil",
-      "serviceType": "Reciclagem de componentes eletrônicos"
-    }
-    </script>
-    <script type="module" crossorigin src="/reutechzar-circular-solutions/assets/index-FNShoGEp.js"></script>
-    <link rel="stylesheet" crossorigin href="/reutechzar-circular-solutions/assets/index-BLTmYEOv.css">
-  </head>
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-background">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold mb-4 text-foreground">404</h1>
+        <p className="text-xl text-muted-foreground mb-4">Página não encontrada</p>
+        <Button asChild>
+          <a href="/">Voltar ao início</a>
+        </Button>
+      </div>
+    </div>
+  );
+};
 
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+export default NotFound;
